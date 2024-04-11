@@ -11,13 +11,12 @@ function App() {
   return (
     <>
       <Nav />
-      <div className=" flex flex-col mx-auto min-h-screen max-w-screen-sm border-solid border-white border-2 content-center rounded-xl">
+      <div className=" flex flex-col flex-1 mx-auto w-full border-solid border-white border-2 content-center rounded-xl">
       <Routes>
           <Route path="/" element={<Landing />}/>
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact" />
       </Routes>
-
       </div>
     </>
   )

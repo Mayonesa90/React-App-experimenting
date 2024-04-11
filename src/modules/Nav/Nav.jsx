@@ -13,7 +13,7 @@ function Nav() {
       ];
 
     return (
-        <header className=" flex justify-between max-w-screen-sm border-solid mx-auto border-white  items-center px-4 border-2 h-12 rounded-3xl mb-3">
+        <header className=" flex w-full justify-between border-solid mx-auto border-white  items-center px-4 border-2 h-12 rounded-3xl mb-3">
             <SmileyNervous color='pink' />
                 <MyDropdown options={options}>
                 {/* <Routes>

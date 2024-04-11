@@ -7,11 +7,27 @@
   src: url('./assets/fonts/ThrowupColor-Pink.otf');
 }
 
+@font-face {
+  font-family: "Lemonmilk-regular";
+  src: url('./assets/fonts/LEMONMILK-Regular.otf');
+}
+
+@font-face {
+  font-family: "Lemonmilk-medium";
+  src: url('./assets/fonts/LEMONMILK-Medium.otf');
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 6rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+   @media screen and (max-width: 650px ) {
+    padding: 2rem;
+   }
 }
 
 .logo {

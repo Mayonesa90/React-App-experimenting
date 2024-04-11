@@ -10,7 +10,9 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'throwupColor-Pink': ['ThrowupColor-Pink']
+      'throwupColor-Pink': ['ThrowupColor-Pink'],
+      'Lemonmilk-Regular': ['Lemonmilk-Regular'],
+      'Lemonmilk-Medium': ['Lemonmilk-Medium'],
     }
   },
   plugins: [

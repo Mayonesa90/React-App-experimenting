@@ -21,13 +21,14 @@ const MyDropdown = () => {
         <div className="relative inline-block">
             <button onClick={toggleDropdown} className="flex items-center">
                 {isOpen ? 
-                <X className="h-5 w-5" color='pink' /> : 
-                <List className="h-5 w-5" color='pink' />}
+                    <X className="h-5 w-5" color='pink' /> : 
+                    <List className="h-5 w-5" color='pink' />
+                }
             </button>
             {isOpen && (
                 <div className="absolute flex -bottom-1.5 right-7 max-w-fi">
                     {options.map((option, index) => (
-                        <Link key={index} to={option.path} className="block mx-1 px-4 py-2 rounded-sm text-xs text-white-700  bg-fuchsia-400 bg-opacity-60 shadow-lg hover:bg-fuchsia-300">
+                        <Link key={index} to={option.path} className="block mx-1 px-4 py-2 rounded-sm text-xs text-white-700  bg-fuchsia-400 bg-opacity-60 shadow-lg hover:bg-fuchsia-300 hover:rounded-md hover:text-slate-200 font-Lemonmilk-Medium">
                             {option.label}
                         </Link>
                     ))}
