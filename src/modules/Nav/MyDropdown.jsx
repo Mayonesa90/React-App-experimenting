@@ -2,6 +2,7 @@ import 'react-dropdown/style.css';
 import { List } from 'phosphor-react'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
+import { X } from 'phosphor-react'
 
 
 const MyDropdown = () => {
@@ -19,12 +20,14 @@ const MyDropdown = () => {
     return (
         <div className="relative inline-block">
             <button onClick={toggleDropdown} className="flex items-center">
-                <List className="h-5 w-5" />
+                {isOpen ? 
+                <X className="h-5 w-5" color='pink' /> : 
+                <List className="h-5 w-5" color='pink' />}
             </button>
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg">
+                <div className="absolute flex -bottom-1.5 right-7 max-w-fi">
                     {options.map((option, index) => (
-                        <Link key={index} to={option.path} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        <Link key={index} to={option.path} className="block mx-1 px-4 py-2 rounded-sm text-xs text-white-700  bg-fuchsia-400 bg-opacity-60 shadow-lg hover:bg-fuchsia-300">
                             {option.label}
                         </Link>
                     ))}
